@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div id="quiz-section" class="quiz-section">
+        <div class="timer" id="question-timer">60</div>
+        <div class="question" id="question"></div>
+        <img src="" alt="Question Image" class="image" id="question-image">
+        <div class="options">
+            <button class="option" onclick="selectOption(0)" id="option0"></button>
+            <button class="option" onclick="selectOption(1)" id="option1"></button>
+            <button class="option" onclick="selectOption(2)" id="option2"></button>
+            <button class="option" onclick="selectOption(3)" id="option3"></button>
+        </div>
+    </div>
+
+    <div id="score-section" class="score-section">
+        <div class="score" id="score"></div>
+        <button class="btn-start" onclick="startBlitz()">დაიწყე ბლიცი</button>
+    </div>
+
+    <div id="blitz-section" class="blitz">
+        <div class="timer" id="timer">60</div>
+        <div class="question" id="blitz-question"></div>
+        <button class="btn-skip" onclick="skipBlitzQuestion()">შემდეგი</button>
+    </div>
+</div>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <p id="popup-message"></p>
+        <button class="btn-start" onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
